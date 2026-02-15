@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №1 — Розв'язання прямокутного трикутника</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #e0e0e0;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px 50px;
+            max-width: 700px;
+            width: 90%;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #a78bfa, #60a5fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #94a3b8;
+            margin-bottom: 25px;
+        }
+
+        .info-block {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid #a78bfa;
+            padding: 15px 20px;
+            border-radius: 0 10px 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .info-block p {
+            line-height: 1.7;
+            font-size: 0.95rem;
+            color: #cbd5e1;
+        }
+
+        code {
+            background: rgba(167, 139, 250, 0.15);
+            padding: 2px 8px;
+            border-radius: 5px;
+            font-family: 'Cascadia Code', 'Fira Code', monospace;
+            font-size: 0.9rem;
+            color: #c4b5fd;
+        }
+
+        .examples {
+            margin-top: 20px;
+        }
+
+        .examples h3 {
+            font-size: 1rem;
+            color: #94a3b8;
+            margin-bottom: 12px;
+        }
+
+        .example-item {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px 16px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            font-family: 'Cascadia Code', 'Fira Code', monospace;
+            font-size: 0.85rem;
+            color: #a5f3fc;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .example-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 0 15px rgba(167, 139, 250, 0.2);
+        }
+
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Лабораторна робота №1</h1>
+        <h2>Розв'язання прямокутного трикутника за допомогою JavaScript</h2>
+
+        <div class="info-block">
+            <p>
+                Відкрийте <strong>консоль браузера</strong> (F12 → Console) та викличте функцію
+                <code>triangle(value1, type1, value2, type2)</code> для розв'язання прямокутного трикутника.
+            </p>
+        </div>
+
+        <div class="info-block">
+            <p>
+                Допустимі типи: <code>leg</code>, <code>hypotenuse</code>,
+                <code>adjacent angle</code>, <code>opposite angle</code>, <code>angle</code>.
+                Кути задаються у градусах.
+            </p>
+        </div>
+
+        <div class="examples">
+            <h3>Приклади викликів:</h3>
+            <div class="example-item">triangle(3, "leg", 4, "leg")</div>
+            <div class="example-item">triangle(4, "leg", 8, "hypotenuse")</div>
+            <div class="example-item">triangle(5, "hypotenuse", 45, "angle")</div>
+            <div class="example-item">triangle(30, "adjacent angle", 5, "leg")</div>
+            <div class="example-item">triangle(60, "opposite angle", 7, "leg")</div>
+        </div>
+
+        <div class="footer">
+            WEB Technologies &bull; JavaScript Console Lab
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
